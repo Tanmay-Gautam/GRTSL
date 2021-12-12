@@ -15,7 +15,7 @@ body {
 }
 
 .topbar h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
@@ -33,7 +33,7 @@ body {
 }
 
 .navbar .nav-link {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   font-weight: 700 !important;
 }
 
@@ -92,13 +92,13 @@ body {
 .card-section h5 {
   font-size: 1.75em;
   font-weight: bold;
-  font-family: 'Nunito', sans-serif !important;
+  font-family: "Nunito", sans-serif !important;
   white-space: nowrap;
 }
 
 .card-section p {
   font-size: 0.95em;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .card-icon {
@@ -130,7 +130,8 @@ body {
   .contact-info {
     display: none;
   }
-  .middlebar, .topbar {
+  .middlebar,
+  .topbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -144,8 +145,24 @@ body {
 }
 
 @media screen and (max-width: 767.98px) {
-  .secvies_card, .portfolio-item {
+  .secvies_card,
+  .portfolio-item {
     text-align: center !important;
+  }
+  .map {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .navbar-toggler {
+    width: 100% !important;
+  }
+  .footer p, .footer h6 {
+    text-align: center;
+  }
+  .footer-contact-icon {
+    text-align: end !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

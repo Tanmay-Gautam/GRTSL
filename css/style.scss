@@ -1,6 +1,6 @@
 // import Lato font from Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 *,
 *::after,
 *::before {
@@ -8,13 +8,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     overflow-x: clip !important;
     scroll-behavior: smooth;
 }
-.topbar{
-    h6{
-        font-family: 'Poppins', sans-serif;
+.topbar {
+    h6 {
+        font-family: "Poppins", sans-serif;
         font-weight: 600;
         color: #fff;
         text-transform: uppercase;
@@ -26,8 +26,8 @@ body{
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 .navbar {
-    .nav-link{
-        font-family: 'Poppins', sans-serif !important;
+    .nav-link {
+        font-family: "Poppins", sans-serif !important;
         font-weight: 700 !important;
     }
     background-color: #fff !important;
@@ -60,7 +60,7 @@ body{
         border-left: 1px solid rgba(0, 0, 0, 0.1);
         cursor: pointer;
     }
-    .nav-link{
+    .nav-link {
         font-size: 0.8em;
         font-weight: bold;
     }
@@ -71,37 +71,38 @@ body{
     margin-top: 0.125rem;
 }
 
-.card-section{
-    h5{
+.card-section {
+    h5 {
         font-size: 1.75em;
         font-weight: bold;
-        font-family: 'Nunito', sans-serif !important;
+        font-family: "Nunito", sans-serif !important;
         white-space: nowrap;
     }
-    p{
+    p {
         font-size: 0.95em;
-        font-family: 'Poppins', sans-serif !important;
+        font-family: "Poppins", sans-serif !important;
     }
 }
-.card-icon{
+.card-icon {
     font-size: 1.5em;
     padding: 15px !important;
     border-radius: 50% !important;
     border: 3px solid rgb(51, 51, 51) !important;
 }
-.btn{
-    &-know_more, &-load_more{
+.btn {
+    &-know_more,
+    &-load_more {
         padding: 0.5em 1em;
         border-radius: 2px;
         background-color: #1e66ac;
     }
 }
-.footer{
-    iframe{
+.footer {
+    iframe {
         height: 85%;
         width: 100%;
     }
-    td{
+    td {
         white-space: nowrap;
     }
 }
@@ -114,14 +115,32 @@ body{
         display: none;
     }
     // align logo to center on mobile devices
-    .middlebar, .topbar {
+    .middlebar,
+    .topbar {
         display: flex;
         align-items: center !important;
         justify-content: center !important;
     }
 }
 @media screen and (max-width: 767.98px) {
-    .secvies_card, .portfolio-item{
+    .secvies_card,
+    .portfolio-item {
         text-align: center !important;
+    }
+    .map{
+        display: none;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .navbar-toggler{
+        width: 100% !important;
+    }
+    .footer{
+        p, h6{
+            text-align: center;
+        }
+        &-contact-icon{
+            text-align: end !important;
+        }
     }
 }
